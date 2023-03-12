@@ -16,23 +16,24 @@ press ons (30.00)
 
 CREATE TABLE Brandi's Boutique (id INTEGER PRIMARY, name TEXT, quantity INTEGER, price INTEGER);
 
-INSERT INTO Brandi's Boutique VALUES (1, "lingerie", clothing, 23.00);
-INSERT INTO Brandi's Boutique VALUES (2, "hats", clothing, 9.99);
-INSERT INTO Brandi's Boutique VALUES (3, "shirts", 19.99);
-INSERT INTO Brandi's Boutique VALUES (4, "blue pants", clothing, 54.00);
-INSERT INTO Brandi's Boutique VALUES (5, "lipgloss", beauty,  2.00);
-INSERT INTO Brandi's Boutique VALUES (6, "heels", shoes, 80.00);
-INSERT INTO Brandi's Boutique VALUES (7, "boots", shoes, 52.00);
-INSERT INTO Brandi's Boutique VALUES (8, "waist trainers", weightloss, 39.99);
-INSERT INTO Brandi's Boutique VALUES (9, "perfume", fragrance, 100.00);
-INSERT INTO Brandi's Boutique VALUES (10, "jewlery", customs, 40.00);
-INSERT INTO Brandi's Boutique VALUES (11, "body oil", beauty, 15.99);
-INSERT INTO Brandi's Boutique VALUES (12, "body glitter", beauty, 8.99);
-INSERT INTO Brandi's Boutique VALUES (13, under clothes", clothing, 50.00); 
-INSERT INTO Brandi's Boutique VALUES (14, press ons", beauty, 30.00);
+INSERT INTO Brandi's Boutique VALUES (1, "lingerie", clothing, 23.00, 5);
+INSERT INTO Brandi's Boutique VALUES (2, "hats", clothing, 9.99, 10);
+INSERT INTO Brandi's Boutique VALUES (3, "shirts", 19.99, 15);
+INSERT INTO Brandi's Boutique VALUES (4, "blue pants", clothing, 54.00, 20);
+INSERT INTO Brandi's Boutique VALUES (5, "lipgloss", beauty,  2.00, 25);
+INSERT INTO Brandi's Boutique VALUES (6, "heels", shoes, 80.00, 30);
+INSERT INTO Brandi's Boutique VALUES (7, "boots", shoes, 52.00, 35);
+INSERT INTO Brandi's Boutique VALUES (8, "waist trainers", weightloss, 39.99, 40);
+INSERT INTO Brandi's Boutique VALUES (9, "perfume", fragrance, 100.00, 45);
+INSERT INTO Brandi's Boutique VALUES (10, "jewlery", customs, 40.00, 50);
+INSERT INTO Brandi's Boutique VALUES (11, "body oil", beauty, 15.99, 55);
+INSERT INTO Brandi's Boutique VALUES (12, "body glitter", beauty, 8.99, 60);
+INSERT INTO Brandi's Boutique VALUES (13, under clothes", clothing, 50.00, 65); 
+INSERT INTO Brandi's Boutique VALUES (14, press ons", beauty, 30.00, 70);
 
 SELECT * FROM Brandi's Boutique;
 
 SELECT * FROM Brandi's Boutique WHERE price_range >80.00
 
-SELECT SUM(blue pants) FROM Brandi's Boutique
+
+SELECT MAX(price) FROM clothing.
