@@ -1,0 +1,38 @@
+Create own store Brandi's Boutique
+lingerie (23.00)
+hats (9.99)
+shirts (19.99)
+blue pants (54.00)
+lipgloss (2.00)
+heels (80.00)
+boots (52.00)
+waist trainers (39.99)
+perfume (100.00)
+jewlery (40.00)
+body oil (15.99)
+body glitter (8.99)
+under clothes (50.00)
+press ons (30.00)
+
+CREATE TABLE Brandi's Boutique (id INTEGER PRIMARY, name TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO Brandi's Boutique VALUES (1, "lingerie", clothing, 23.00);
+INSERT INTO Brandi's Boutique VALUES (2, "hats", clothing, 9.99);
+INSERT INTO Brandi's Boutique VALUES (3, "shirts", 19.99);
+INSERT INTO Brandi's Boutique VALUES (4, "blue pants", clothing, 54.00);
+INSERT INTO Brandi's Boutique VALUES (5, "lipgloss", beauty,  2.00);
+INSERT INTO Brandi's Boutique VALUES (6, "heels", shoes, 80.00);
+INSERT INTO Brandi's Boutique VALUES (7, "boots", shoes, 52.00);
+INSERT INTO Brandi's Boutique VALUES (8, "waist trainers", weightloss, 39.99);
+INSERT INTO Brandi's Boutique VALUES (9, "perfume", fragrance, 100.00);
+INSERT INTO Brandi's Boutique VALUES (10, "jewlery", customs, 40.00);
+INSERT INTO Brandi's Boutique VALUES (11, "body oil", beauty, 15.99);
+INSERT INTO Brandi's Boutique VALUES (12, "body glitter", beauty, 8.99);
+INSERT INTO Brandi's Boutique VALUES (13, under clothes", clothing, 50.00); 
+INSERT INTO Brandi's Boutique VALUES (14, press ons", beauty, 30.00);
+
+SELECT * FROM Brandi's Boutique;
+
+SELECT * FROM Brandi's Boutique WHERE price_range >80.00
+
+SELECT SUM(blue pants) FROM Brandi's Boutique
